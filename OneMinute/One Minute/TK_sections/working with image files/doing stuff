@@ -1,0 +1,13 @@
+[{"DateObserved":"2020-10-31 ","HourObserved":21,"LocalTimeZone":"PST","ReportingArea":"Las Vegas","StateCode":"NV",
+"Latitude":36.206,"Longitude":-115.223,"ParameterName":"O3","AQI":38,"Category":{"Number":1,"Name":"Good"}},
+{"DateObserved":"2020-10-31 ","HourObserved":21,"LocalTimeZone":"PST","ReportingArea":"Las Vegas",
+"StateCode":"NV","Latitude":36.206,"Longitude":-115.223,"ParameterName":"PM2.5","AQI":58,"Category":{"Number":2,"Name":"Moderate"}},
+{"DateObserved":"2020-10-31 ","HourObserved":21,"LocalTimeZone":"PST","ReportingArea":"Las Vegas","StateCode":"NV","Latitude":36.206,"Longitude":-115.223,"ParameterName":"PM10","AQI":54,"Category":{"Number":2,"Name":"Moderate"}}]
+
+colour codes:
+-->orange = '#FF7E00'
+-->yellow = '#FFFF00'
+-->red = '#FF0000'
+-->purple = '#8f3f97'
+-->maroon = '#7e0023'
+-->green = '#00E400'

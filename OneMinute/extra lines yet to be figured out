@@ -1,0 +1,114 @@
+def new_member():  # Function for Add new member button
+    root_new_member = Tk()
+    root_new_member.title('Adding New Member')
+    root_new_member.geometry('350x150')
+    root_new_member.iconbitmap('C:/Users/User/Desktop/Code/One Minute At A Time/one minute.ico')
+
+    root_new_member.mainloop()
+
+
+
+
+
+
+class Rooty:
+    def __init__(self, master):
+
+        frame = LabelFrame(master, text='TextBox', padx=70, pady=20)
+        frame.grid(row=0, column=1)
+        frame2 = LabelFrame(master, text='Members', padx=30, pady=80)
+        frame2.grid(row=0, column=0)
+
+        self.var_a = StringVar()
+        self.var_b = StringVar()
+        self.var_c = StringVar()
+        self.var_d = StringVar()
+
+        self.arrange = {
+            'Irene Mwaniki': self.var_a,
+            'David John': self.var_b,
+            'Joseph Willis': self.var_c,
+            'Bruce James': self.var_d
+            }
+
+        self.egg_row = 0
+        self.egg_column = 0
+        while self.egg_row < len(self.arrange):
+            for x, y in self.arrange.items():
+                self.g = Checkbutton(frame2, text=x, variable=y, onvalue='Present', offvalue='Absent').deselect()
+                self.g = Checkbutton(frame2, text=x, variable=y, onvalue='Present', offvalue='Absent').grid(row=self.egg_row,
+                                                                                                       column=self.egg_column)
+                self.egg_row += 1
+
+        self.box = Text(frame, height=20, width=50)
+        self.box.insert(1.0, 'NAME \t\t\t',
+                        1.1, 'PRESENCE\n')
+        self.box.grid(row=0, column=0)
+        Button_check = Button(master, text='Submit Attendance', command=self.click)
+        Button_check.grid(row=3, column=0)
+
+    def click(self):
+        egg = 3.0
+        egg2 = 2
+        while egg < len(self.arrange):
+            for x2, y2 in self.arrange.items():
+                self.box.insert(egg, x2 + '\t\t\t' + y2.get() + '\n')
+            egg += 1
+            egg2 += 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def open_attendance_window():
+    root_att = Tk()
+    # Sort out the database side
+    imp = sqlite3.connect('Member_Dets.db')
+    imp_c = imp.cursor()
+    imp_c.execute('SELECT *,oid FROM info3')
+    alll = imp_c.fetchall()
+
+    egg = 0
+    egg_l = []
+    while egg < len(alll):
+        for x in alll:
+            label = Label(root_att, text=str(x[0] + x[1]))
+            comb = ttk.Combobox(root_att, values=[
+                'Present',
+                'Absent'
+            ])
+            comb.grid(row=egg, column=1, pady=5)
+            label.grid(row=egg, column=0, pady=5)
+            comb.current(1)
+            egg_l.append(comb.get())
+            egg += 1
+
+    def listy():
+        eg = 0
+        eG = egg+2
+        while eg < len(egg_l):
+            for e in egg_l:
+                label = Label(root_att, text=e, font=('Helvetica', 10))
+                label.grid(row=eG, column=0)
+            eg += 1
+            eG += 1
+
+    butty = Button(root_att, text='Submit', command=listy)
+    butty.grid(row=0, rowspan=10, column=2)
+
+    root_att.mainloop()
+    pass

@@ -1,0 +1,13 @@
+1.How to add new people to every interface
+2.Starting database integration:
+  i) Commence with member details(for current details)
+     -Involves making sure that the buttons related to the members works properly
+  ii)Work on attendance
+     -Making sure that the checkboxes are integrated into the code of the member details side(optional)
+  iii)Event Management
+     -Implement date to the events' side
+
+3.Creating a directory for storing the minutes
+4.Find a way to add the attendance to the minutes file
+5.Find a way of making it look like a single application
+6.Scrollbar to my treeview widgets
