@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RentorPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_gravity="center_horizontal"
+            android:background="#3F51B5"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Rentor Page"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textSize="22sp" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/searchCategories"
+            android:layout_width="match_parent"
+            android:layout_height="153dp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Items"
+            android:textSize="22sp" />
+
+        <SearchView
+            android:id="@+id/itemSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/searchItems"
+            android:layout_width="match_parent"
+            android:layout_height="261dp" />
+
+        <Button
+            android:id="@+id/buttonRentedItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rented Items" />
+
+        <Button
+            android:id="@+id/browseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Browse Items" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

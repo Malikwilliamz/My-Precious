@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout90"
+        android:layout_width="409dp"
+        android:layout_height="314dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+
+            <TextView
+                android:id="@+id/textView95"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#FDFDFD"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Users"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FBFAFA"
+                android:textSize="22sp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/editTextName39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="text"
+            android:translationY="20dp" />
+
+        <Button
+            android:id="@+id/buttonDeleteUser"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="DELETE USER"
+            android:translationX="40dp"
+            android:translationY="40dp" />
+
+        <Button
+            android:id="@+id/buttonDisableUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="DISABLE USER"
+            android:translationY="40dp" />
+
+        <Button
+            android:id="@+id/buttonDisplayUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="DISPLAY ALL USERS" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+
+        android:id="@+id/linearLayout82"
+        android:layout_width="420dp"
+        android:layout_height="414dp"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar57"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <TextView
+                android:id="@+id/textView89"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FDFDFD"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Admin Page"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FBFAFA"
+                android:textSize="22sp"
+                tools:layout_editor_absoluteY="17dp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar89"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <TextView
+                android:id="@+id/textView69"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FDFDFD"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Categories"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FBFAFA"
+                android:textSize="22sp"
+                tools:layout_editor_absoluteY="17dp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <EditText
+            android:id="@+id/editTextName29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Category Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextDescription278"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/buttonAddcategory556"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="ADD"
+            android:translationX="170dp" />
+
+        <Button
+            android:id="@+id/buttonAddcategory903"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="EDIT CATEGORY"
+            android:translationX="140dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

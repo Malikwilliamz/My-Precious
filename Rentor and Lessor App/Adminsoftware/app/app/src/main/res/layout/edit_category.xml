@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--        android:id="@+id/linearLayout2"-->
+        <!--        android:layout_width="420dp"-->
+        <!--        android:layout_height="414dp"-->
+        <!--        android:orientation="vertical"-->
+        <!--        tools:layout_editor_absoluteX="0dp"-->
+        <!--        tools:layout_editor_absoluteY="0dp">-->
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:gravity="center"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FDFDFD"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Category"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FBFAFA"
+                android:textSize="22sp"
+                tools:layout_editor_absoluteY="17dp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <EditText
+            android:id="@+id/editTextName29"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:hint="Category Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextDescription20"
+            android:layout_width="409dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/buttonAddcategory58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="SAVE" />
+
+        <Button
+            android:id="@+id/buttonAddcategory39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="DELETE CATEGORY" />
+
+    </LinearLayout>
+</RelativeLayout>
