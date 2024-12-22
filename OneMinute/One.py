@@ -19,7 +19,7 @@ main_member_database_cursor = main_member_database_access.cursor()
 
 # Configuring main window
 root = Tk()
-root.iconbitmap("C:/Users/Malik/Desktop/Code/OneMinute/one minute.ico")
+#root.iconbitmap("C:/Users/Malik/Desktop/Code/OneMinute/one minute.ico")
 root.title('One Minute At A Time')
 root.geometry('670x560')
 root.configure(background='khaki')
@@ -323,7 +323,7 @@ def member_details_button():  # Function for show member details button
         global h_entry_edit
         editing_root = Tk()
         editing_root.title('Editing Member Info')
-        editing_root.iconbitmap('C:/Users/malik/Desktop/Code/OneMinute/one minute.ico')
+        #editing_root.iconbitmap('C:/Users/malik/Desktop/Code/OneMinute/one minute.ico')
 
         entered_id = id_entry_chamber.get()
         member_database_cursor.execute("SELECT * FROM info3 WHERE oid= " + entered_id)
@@ -381,7 +381,7 @@ def member_details_button():  # Function for show member details button
             editing_root.destroy()
             root_info = Tk()
             root_info.title('Error')
-            root_info.iconbitmap('C:/Users/malik/Desktop/Code/OneMinute/one minute.ico')
+            #root_info.iconbitmap('C:/Users/malik/Desktop/Code/OneMinute/one minute.ico')
             label_error = Label(root_info, text='Non-existent number \nPlease try again', font=('Helvetica', 30))
             label_error.grid(row=0, column=0, sticky=N + E + W + S)
             root_info.mainloop()
@@ -495,7 +495,7 @@ def open_writing_window():  # Function for Start writing button
 
     root_writing = Tk()
     root_writing.title('One Minute At A Time')
-    root_writing.iconbitmap('C:/Users/User/Desktop/Code/OneMinute/one minute.ico')
+    #root_writing.iconbitmap('C:/Users/User/Desktop/Code/OneMinute/one minute.ico')
     root_writing.geometry('1020x660')
 
     # Create Frame1
