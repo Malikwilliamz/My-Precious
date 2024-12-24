@@ -207,9 +207,10 @@ def open_writing_window():  # Function for Start writing button
         root_save = Tk()
         root_save.geometry('200x200')
         root_entry = Entry(root_save)
-        root_chose = (root_entry.get() + '.txt ')
+        
 
         def finish():
+            root_chose = (root_entry.get() + '.txt ')
             root_save.destroy()
             word = open(root_chose, 'w')
             word.write(text_box.get(1.0, END) + '\n' + text_box2.get(1.0, END) + '\n' + text_box3.get(1.0, END) + '\n'
