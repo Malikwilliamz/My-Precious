@@ -4,4 +4,6 @@
 
 -Rentor and Lessor app is a java-based project made in Android studio together with three other group memebers at my university.
 
+-Machine Learning and Data Science Bootcamp
+
 -ONGOING: Retrieval Car using raspberry pi 3 B for motor and servo control and NVIDIA Jetson Nano for computer vision.
